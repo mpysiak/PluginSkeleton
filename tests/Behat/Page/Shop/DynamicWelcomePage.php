@@ -8,9 +8,7 @@ use FriendsOfBehat\PageObjectExtension\Page\SymfonyPage;
 
 class DynamicWelcomePage extends SymfonyPage implements WelcomePageInterface
 {
-    /**
-     * @inheritdoc
-     */
+    /** @inheritdoc */
     public function getGreeting(): mixed
     {
         return $this->getSession()->getPage()->waitFor(3, function (): string {
@@ -24,17 +22,13 @@ class DynamicWelcomePage extends SymfonyPage implements WelcomePageInterface
         });
     }
 
-    /**
-     * @inheritdoc
-     */
+    /** @inheritdoc */
     public function getRouteName(): string
     {
         return 'acme_sylius_example_dynamic_welcome';
     }
 
-    /**
-     * @inheritdoc
-     */
+    /** @inheritdoc */
     protected function getDefinedElements(): array
     {
         return array_merge(parent::getDefinedElements(), [
