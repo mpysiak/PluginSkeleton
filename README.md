@@ -19,6 +19,8 @@ there you will find the <a href="https://docs.sylius.com/en/latest/plugin-develo
 
 ## Quickstart Installation
 
+Run `composer create-project sylius/plugin-skeleton ProjectName`.
+
 ### Traditional
 
 1. From the plugin skeleton root directory, run the following commands:
@@ -34,7 +36,7 @@ there you will find the <a href="https://docs.sylius.com/en/latest/plugin-develo
     $ (cd tests/Application && APP_ENV=test bin/console sylius:fixtures:load --no-interaction)
     ```
 
-To be able to set up a plugin's database, remember to configure your database credentials in `tests/Application/.env` and `tests/Application/.env.test`.
+    To be able to set up a plugin's database, remember to configure your database credentials in `tests/Application/.env` and `tests/Application/.env.test`.
 
 1. Run your local server:
 
